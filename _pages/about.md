@@ -11,15 +11,15 @@ Hi guys! I'm Austin, a high school senior from Lynbrook High in California! This
 
 Some Random Facts About Me!
 =====
-My favorite fruits are:
+My favorite fruits are
 1. Blackberries
 2. Raspberries
 3. Oranges
 4. Watermelon
 5. Seedless Grapes
 (*Honorable Mentions: White Peaches that are firm, Honeydew*) 
-
-My favorite Pokémon regions overall are:
+=====
+My favorite Pokémon regions overall are
 1. Hoenn
 2. Johto
 3. Sinnoh
@@ -28,75 +28,36 @@ My favorite Pokémon regions overall are:
 6. Kanto
 7. Galar
 8. Paldea
-
-My favorite Pokémon regions **based on music** are:
+=====
+My favorite Pokémon regions **based on music** are
 1. Hoenn/Johto tie
 2. Kalos 
 3. Sinnoh
 4. Unova
 5. Kanto
 6. Galar/Paldea/Alola three way tie
-
-My favorite Non-Legendary Pokémon are:
+=====
+My favorite Non-Legendary Pokémon are
 1. Venipede
 2. Slowpoke
 3. Dragonair/Wailord tie
 4. Shellder
-
 Yes, I love Pokémon a whole lot.
-
-Why my rankings are as is
 =====
-TO BE FINISHED
 
-
-
-
-
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
-
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
-
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
-
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
-
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+Why my rankings are the way they are
+=====
+First off, let us talk about fruits.
+Now, before you guys get on my back about leaving out mangoes or whatnot, let me just put out a disclaimer that these are my favorite fruits when they're at their PEAK. So out of all of the fruits at their peak, I have Blackberries at their peak above any other fruit at their peak. Now the thing about blackberries is that when they're NOT at their peak, they can sometimes be bitter, or sour, or sometimes downright bland. But at their prime, blackberries are just slightly firm, amazingly sweet, have a saisfying (in my opinion) crunch from the seeds, and leave me wanting more. Same goes for raspberries. They can sometimes be too soft and mushy, or too sour, but like blackberries, the best raspberries are simply the best of the fruits. 
+Now, if you know me personally my ranking of oranges as number three should come to you as no surprise. This summer, at CMU Precollege, I ate 42 oranges in a single day, so much that it earned me the nickname of "Orange Guy." Didn't eat lunch and was starving? Look no further than Orange Guy to provide you with some citrusy sustenance. Entered a room with a citrus, fresh, scent? Orange Guy's to blame. But in all seriousness, oranges in their prime are forces to be reckoned with, especially the 蜜橘 I be finding at the local H-Mart. My mom could buy 5, or 10, or 20 - no matter - and all would be finished within an hour of returning home. I love oranges. No more to be said here.
+As for watermelon, I think this is a universally agreed upon fruit, but I still have some words to say. When I look for a watermelon, I look for BIG, BLACK, SEEDS. None of the small dinky seeds, or the seedless varieties fly by. As for texture, I look for a juicy, but not soft melon - I believe the word in chinese is 沙沙 (but sandy isn't quite how I'd describe it). Sometimes when we have a quarter of a watermelon left at home, we won't even bother cutting them - we'll just pull out spoons and start digging in directly. And drink up the watermelon juice from the rind-bowl, after.
+Seedless grapes is a controversial pick, according to my family. My mom really, really, loves the peony grapes that you need to deskin and watch out for seeds. Sure, I think they're pretty good. But worth the hassle? Not really. The skin is bitter, and the seeds hurt my mouth. Now, seedless grapes, on the other hand, aren't as sweet, but the taste is still on par. Also, there's no need to deskin or whatnot, and freezing them makes a perfect summer-time treat. Peony grapes, titan napes, superhero capes, SEEDLESS GRAPES IN 5.
+Now, when I introduced my Honorable Mentions to my friends, they had their objections. Apparently, they like their peaches soft. Well, this is my list so hard peaches are the only peaches you'll find on this list.
+=====
+For my favorite Pokémon regions, be aware that most of it IS nostalgia bias. My first ever Pokémon game was Pokémon Ruby, then Emerald, and then Alpha Sapphire. And then I played both Pokémon Silver and Heart Gold. That should explain the first two. Now, Sinnoh is number 3 on this list for 2 reasons: The Pokémon introduced in Sinnoh was peak. Absolute cinema. I'd argue that Unova had slightly better Pokémon, but hold your horses. Reason number 2 on why Sinnoh is 2nd, is because it's the first region to have a REAL snow area. No, Mt. Silver's peak doesn't count, and Kanto's Seafoam Islands don't have **snow**. Winter's my favorite season. Ice-type is my favorite type. Go figure. Unova and Kalos are tied up for 4th. Unova has peak Pokémon design, and Kalos has a phenomenal soundtrack, and I feel like it's region design and lore is unparalleled (though Hoenn IS surprisingly lore deep). Alola is next. It's island theme was definitely novel, and I loved the Ultra Beasts. However, the other regions are simply better. In my definitely non-biased opinion, of course. The last two regions are Galar and Paldea. Galar was alright. I liked it. It wasn't bad. However, Paldea's Pokémon design is definitely worse, and I'm not familiar enough with the region to give it an accurate ranking. It's in last for those reasons (sure, it's unfair, but who cares?)
+=====
+If we're ranking the regions based on their music, however, the list changes slightly. This time, Hoenn and Johto are tied for 1st. If I REALLY REALLY had to choose one between the two, I'd choose Hoenn simply because I played it before I played a Johto game. Hoenn has Soaring Illusions (the GOAT of Pokémon Music), Littleroot Town (which arguably sounds even better in Gen III than in Gen VI), Route 104, Zinnia's Theme, and a Surf Theme that absolutely SLAPS. These are just some examples, by the way. The entire town and route category in Hoenn is SSS tier. Meanwhile, Johto has Ecruteak City, New Bark Town, Azalea Town, the National Park Theme, and a Surf Theme that SLAPS even MORE. It's entire sound track, aside from the cave themes, is SSS+ tier. In fact, in 11th grade, while I was taking my C++ Final Exam at my dual enrollment class at De Anza, I was listening to the HGSS Soundtrack (yes, we were permitted to listen to music). Fact: I was headbanging so hard the professor had to come over and tap my shoulder to make sure I wasn't having a seizure. Kalos is 2nd (technically 3rd, after both Hoenn and Johto). Why? Because of Snowbelle City's theme alone. In all seriousness, the entire Kalos lineup is elite. Absolutely amazing. Superb. And really really unique (well, not exactly unique, but really good use of) instrumentation and orchestration. Sinnoh's Pokémon League theme is super uniqe. It's calm, slightly wistful, and tranquill, unlike the really ferocious and aggressive Pokémon League themes of other games. In my opinion, this more "mature" theme, if you will, fits perfectly especially in the context of the game narrative. Sinnoh's plot is one of the most extreme, and the amount of hardship the player needs to go through just to arrive at the Pokémon League is what makes Sinnoh's peaceful, almost sad, League theme so fitting and perfect. And although Cynthia's theme is absolutely wiped by Zinnia's theme, it's still a theme that'll live through the trauma of an entire generation. Unova is also awesome. It's more contemporary music style also makes perfect sense given the region's based off of New York. I just love everything else more. Same goes for Alola, Galar, and Paldea. I feel personally as if that somewhere down the line, the music of the later generations lost a bit of what made it "Pokémon" music.
+=====
+For my Pokémon list, there is no real reasoning per se. Out of all my rankings, Favorite Pokémon is the most subjective. I love Venipede because it's cute. I love Slowpoke because it's cute. I love Dragonair because it's cute. I love Wailmer because it's cute. I love Shellder because it's cute. 
+=====
+Anyways, these are facts about me that I deemed important enough to spend 5 hours writing paragraphs on!
