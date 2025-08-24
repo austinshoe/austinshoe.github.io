@@ -1,11 +1,57 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+Hi guys! I'm Austin, a high school senior from Lynbrook High in California! This website is a lil peek into the type of stuff I do for fun (namely video game devving and music composition / arrangement)!
+
+Some Random Facts About Me!
+=====
+My favorite fruits are:
+1. Blackberries
+2. Raspberries
+3. Oranges
+4. Watermelon
+5. Seedless Grapes
+(*Honorable Mentions: White Peaches that are firm, Honeydew*) 
+
+My favorite Pokémon regions overall are:
+1. Hoenn
+2. Johto
+3. Sinnoh
+4. Kalos/Unova tie
+5. Alola
+6. Kanto
+7. Galar
+8. Paldea
+
+My favorite Pokémon regions **based on music** are:
+1. Hoenn/Johto tie
+2. Kalos 
+3. Sinnoh
+4. Unova
+5. Kanto
+6. Galar/Paldea/Alola three way tie
+
+My favorite Non-Legendary Pokémon are:
+1. Venipede
+2. Slowpoke
+3. Dragonair/Wailord tie
+4. Shellder
+
+Yes, I love Pokémon a whole lot.
+
+Why my rankings are as is
+=====
+TO BE FINISHED
+
+
+
+
 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
