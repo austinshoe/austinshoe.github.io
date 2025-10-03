@@ -88,6 +88,16 @@ Practicing Digital Design with Verilog by creating a simple 32-bit MIPS CPU!
 ---
 
 ## Lost Youkai
+<div id="chibi-slideshow" style="max-width:800px; margin:auto;">
+  <a href="https://github.com/austinshoe/Lost-Youkai" target="_blank">
+    <img class="slide" src="/images/Slideshow images/cherry.png" style="width:100%; height:auto;">
+    <img class="slide" src="/images/Slideshow images/cherryblossom.png" style="width:100%; height:auto; display:none;">
+  </a>
+</div>
+<script>
+initSlideshow("chibi-slideshow", 5000);
+</script>
+
 [🔗 GitHub Repo](https://github.com/austinshoe/Lost-Youkai)
 
 My team's Lightning Round (1 week) project at CMU Precollege's NHSGA! It's a reboot on the arcade classic Robotron, but set in a post ghost apocalyptic world...
