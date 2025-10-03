@@ -16,23 +16,49 @@ Contains custom art, a custom soundtrack, new plotline, region and fakemon! Comp
 ---
 
 ## Hobo Wizard Adventures
-[![Hobo Wizard Screenshot](/images/Pokémon_Heto_Demo.png)](https://github.com/austinshoe/PokemonHeto)
+<div style="max-width:600px; margin:auto;">
+  <a href="https://www.instagram.com/froglogs_/" target="_blank">
+    <img class="slideshow" src="/images/Slideshow images/HWA1.png" style="width:115%; height:auto;>
+    <img class="slideshow" src="/images/Slideshow images/HWA3.png" style="width:115%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/HWA4.png" style="width:115%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/HWA5.png" style="width:115%; height:auto; display:none;">
+  </a>
+</div>
+
+<script>
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slideshow");
+
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 30000); // Change every 30 seconds
+}
+
+showSlides();
+</script>
 [🔗 GitHub Repo](https://github.com/austinshoe/Hobo-Wizard-Adventures)
 
 A WIP Unity based deckbuilding game! Play as a Hobo Wizard Frog and build your hand of doom!
-A production of [Studio Citrus](https://github.com/Studio-Of-Citrus)
-Note: Public Github Updates will be discontinued as we plan to eventually monetize and publish the game on Steam. Follow our progress on instagram at [froglogs_](https://www.instagram.com/froglogs_/)!
+
+A production of [Studio Citrus](https://github.com/Studio-Of-Citrus). 
+<small>Note: Public Github Updates will be discontinued as we plan to eventually monetize and publish the game on Steam. 
+Follow our progress on instagram at [froglogs_](https://www.instagram.com/froglogs_/)!</small>
 
 ---
 
 ## Chibi Frog Adventures
 <div style="max-width:600px; margin:auto;">
   <a href="https://www.instagram.com/froglogs_/" target="_blank">
-    <img class="slideshow" src="/images/Slideshow images/Chibi1.png" style="width:100%">
-    <img class="slideshow" src="/images/Slideshow images/Chibi2.png" style="width:100%; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi3.png" style="width:100%; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi4.png" style="width:100%; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi5.png" style="width:100%; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi1.png" style="width:115%; height:auto;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi2.png" style="width:115%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi3.png" style="width:115%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi4.png" style="width:115%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi5.png" style="width:115%; height:auto; display:none;">
   </a>
 </div>
 
@@ -54,8 +80,10 @@ showSlides();
 </script>
 
 A WIP Unity based RPG Game, built off the setting of Hobo Wizard Adventures!
-A production of [Studio Citrus](https://github.com/Studio-Of-Citrus)
-Note: Public Github Updates will be discontinued as we plan to eventually monetize and publish the game on Steam.
+
+A production of [Studio Citrus](https://github.com/Studio-Of-Citrus). 
+<small>Note: Public Github Updates will be discontinued as we plan to eventually monetize and publish the game on Steam. 
+Follow our progress on instagram at [froglogs_](https://www.instagram.com/froglogs_/)!</small>
 
 ---
 
