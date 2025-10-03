@@ -36,38 +36,20 @@ Note: Public Github Updates will be discontinued as we plan to eventually moneti
   </a>
 </div>
 
-<style>
-.slideshow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.slideshow.show {
-  opacity: 1;
-  display: block !important;
-}
-</style>
-
 <script>
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slideshow");
 
 function showSlides() {
   for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("show");
+    slides[i].style.display = "none";  
   }
   slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1; }
-  slides[slideIndex-1].classList.add("show");
-  setTimeout(showSlides, 5000);
+  if (slideIndex > slides.length) { slideIndex = 1 }    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 30000); // Change every 30 seconds
 }
 
-slides[0].classList.add("show");
 showSlides();
 </script>
 
