@@ -16,12 +16,12 @@ Contains custom art, a custom soundtrack, new plotline, region and fakemon! Comp
 ---
 
 ## Hobo Wizard Adventures
-<div style="max-width:600px; margin:auto;">
+<div style="max-width:750px; margin:auto;">
   <a href="https://www.instagram.com/froglogs_/" target="_blank">
-    <img class="slideshow" src="/images/Slideshow images/HWA1.png" style="width:115%; height:auto;>
-    <img class="slideshow" src="/images/Slideshow images/HWA3.png" style="width:115%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/HWA4.png" style="width:115%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/HWA5.png" style="width:115%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/HWA1.png" style="width:100%; height:auto;">
+    <img class="slideshow" src="/images/Slideshow images/HWA3.png" style="width:100%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/HWA4.png" style="width:100%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/HWA5.png" style="width:100%; height:auto; display:none;">
   </a>
 </div>
 
@@ -36,7 +36,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1 }    
   slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 30000); // Change every 30 seconds
+  setTimeout(showSlides, 5000); // Change every 30 seconds
 }
 
 showSlides();
@@ -52,13 +52,13 @@ Follow our progress on instagram at [froglogs_](https://www.instagram.com/froglo
 ---
 
 ## Chibi Frog Adventures
-<div style="max-width:600px; margin:auto;">
+<div style="max-width:750px; margin:auto;">
   <a href="https://www.instagram.com/froglogs_/" target="_blank">
-    <img class="slideshow" src="/images/Slideshow images/Chibi1.png" style="width:115%; height:auto;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi2.png" style="width:115%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi3.png" style="width:115%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi4.png" style="width:115%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi5.png" style="width:115%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi1.png" style="width:100%; height:auto;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi2.png" style="width:100%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi3.png" style="width:100%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi4.png" style="width:100%; height:auto; display:none;">
+    <img class="slideshow" src="/images/Slideshow images/Chibi5.png" style="width:100%; height:auto; display:none;">
   </a>
 </div>
 
@@ -73,7 +73,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1 }    
   slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 30000); // Change every 30 seconds
+  setTimeout(showSlides, 5000); // Change every 30 seconds
 }
 
 showSlides();
