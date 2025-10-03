@@ -16,31 +16,38 @@ Contains custom art, a custom soundtrack, new plotline, region and fakemon! Comp
 ---
 
 ## Hobo Wizard Adventures
-<div style="max-width:750px; margin:auto;">
+<div id="hobo-slideshow" style="max-width:800px; margin:auto;">
   <a href="https://www.instagram.com/froglogs_/" target="_blank">
-    <img class="slideshow" src="/images/Slideshow images/HWA1.png" style="width:100%; height:auto;">
-    <img class="slideshow" src="/images/Slideshow images/HWA3.png" style="width:100%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/HWA4.png" style="width:100%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/HWA5.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/HWA1.png" style="width:100%; height:auto;">
+    <img class="slide" src="/images/Slideshow images/HWA3.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/HWA4.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/HWA5.png" style="width:100%; height:auto; display:none;">
   </a>
 </div>
 
 <script>
-let slideIndex = 0;
-const slides = document.getElementsByClassName("slideshow");
+function initSlideshow(containerId, interval=5000) {
+  let slideIndex = 0;
+  const container = document.getElementById(containerId);
+  const slides = container.getElementsByClassName("slide");
 
-function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, interval);
   }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 5000); // Change every 30 seconds
-}
 
-showSlides();
+  showSlides();
+}
 </script>
+<script>
+initSlideshow("hobo-slideshow", 5000);
+</script>
+
 [🔗 GitHub Repo](https://github.com/austinshoe/Hobo-Wizard-Adventures)
 
 A WIP Unity based deckbuilding game! Play as a Hobo Wizard Frog and build your hand of doom!
@@ -52,31 +59,17 @@ Follow our progress on instagram at [froglogs_](https://www.instagram.com/froglo
 ---
 
 ## Chibi Frog Adventures
-<div style="max-width:750px; margin:auto;">
+<div id="chibi-slideshow" style="max-width:800px; margin:auto;">
   <a href="https://www.instagram.com/froglogs_/" target="_blank">
-    <img class="slideshow" src="/images/Slideshow images/Chibi1.png" style="width:100%; height:auto;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi2.png" style="width:100%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi3.png" style="width:100%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi4.png" style="width:100%; height:auto; display:none;">
-    <img class="slideshow" src="/images/Slideshow images/Chibi5.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Chibi1.png" style="width:100%; height:auto;">
+    <img class="slide" src="/images/Slideshow images/Chibi2.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Chibi3.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Chibi4.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Chibi5.png" style="width:100%; height:auto; display:none;">
   </a>
 </div>
-
 <script>
-let slideIndex = 0;
-const slides = document.getElementsByClassName("slideshow");
-
-function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 5000); // Change every 30 seconds
-}
-
-showSlides();
+initSlideshow("chibi-slideshow", 5000);
 </script>
 
 A WIP Unity based RPG Game, built off the setting of Hobo Wizard Adventures!
