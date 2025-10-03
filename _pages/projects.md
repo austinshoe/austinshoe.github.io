@@ -7,9 +7,11 @@ author_profile: true
 Welcome to my projects page! Here's some of the stuff I've been doing.
 
 ## Pokémon Heto
+[![Pokemon Heto Screenshot](/images/Pokémon_Heto_Demo.png)](https://github.com/austinshoe/PokemonHeto)
 [🔗 GitHub Repo](https://github.com/austinshoe/PokemonHeto)
 
 A custom Gen III styled Pokémon Decompilation fan game! Drew inspiration from the world of *86: Eighty-Six*!
+Contains custom art, a custom soundtrack, new plotline, region and fakemon! Completion rate: 93%
 
 ---
 
