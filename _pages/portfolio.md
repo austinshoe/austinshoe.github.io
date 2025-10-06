@@ -7,11 +7,12 @@ author_profile: true
 Here's some of the art I've done! I've divided it into sections for digital and physical art, as well as my 3D Modelling work!
 
 ## Digital Art
+
 <div id="dig-slideshow" style="max-width:800px; margin:auto; position:relative;">
   <a href="https://www.instagram.com/froglogs_/" target="_blank">
-    <img class="slide" src="/images/phoenix and ginkgo brighte.png" alt="Phoenix and Ginkgo" style="width:100%; display:block;">
-    <img class="slide" src="/images/Froggers hoppers.png" alt="Froggers hoppers" style="width:100%; display:none;">
-    <img class="slide" src="/images/Slideshow images/cherry.png" alt="Cherry art" style="width:100%; display:none;">
+    <img class="slide" src="/images/phoenix and ginkgo brighte.png" alt="Phoenix and Ginkgo">
+    <img class="slide" src="/images/Froggers hoppers.png" alt="Froggers hoppers">
+    <img class="slide" src="/images/Slideshow images/cherry.png" alt="Cherry art">
   </a>
 
   <!-- Dot navigation -->
@@ -39,17 +40,19 @@ Here's some of the art I've done! I've divided it into sections for digital and 
   background-color: #717171;
 }
 
-/* Optional: fade transition */
+/* Slide fade */
 .slide {
+  width: 100%;
+  display: none;
+  opacity: 0;
   transition: opacity 0.6s ease;
   position: absolute;
-  width: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
 }
 
 .slide.visible {
+  display: block;
   opacity: 1;
   position: relative;
 }
@@ -57,6 +60,7 @@ Here's some of the art I've done! I've divided it into sections for digital and 
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+
   function initSlideshow(containerId, interval = 5000) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -92,10 +96,10 @@ document.addEventListener("DOMContentLoaded", function() {
     container.addEventListener("mouseenter", () => clearTimeout(timer));
     container.addEventListener("mouseleave", () => resetTimer());
 
-    // Expose global function for inline onclick dots
+    // Expose global function for inline onclick
     window.currentSlide = function(id, n) {
       if (id !== containerId) return;
-      goTo(n - 1); // your dots are 1-indexed
+      goTo(n - 1); // dots are 1-indexed
     }
 
     updateUI();
@@ -104,11 +108,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Initialize slideshow
   initSlideshow("dig-slideshow", 5000);
+
 });
 </script>
-
 
 ## Physical Art
 
 ## 3D Models
-
