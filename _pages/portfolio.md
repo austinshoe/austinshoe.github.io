@@ -41,31 +41,48 @@ Here's some of the art I've done! I've divided it into sections for digital and 
 </style>
 
 <script>
-function initSlideshow(containerId, interval=5000) {
-  let slideIndex = 0;
+function initSlideshow(containerId, interval = 5000) {
   const container = document.getElementById(containerId);
-  const slides = container.getElementsByClassName("slide");
-  const dots = container.getElementsByClassName("dot");
+  if (!container) return console.warn("Slideshow container not found:", containerId);
 
-  function showSlides(n = null) {
-    if (n !== null) slideIndex = n - 1; // Jump to specific slide if passed
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-      dots[i].classList.remove("active");
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].classList.add("active");
-    setTimeout(showSlides, interval);
+  const slides = Array.from(container.getElementsByClassName("slide"));
+  const dots = Array.from(container.getElementsByClassName("dot"));
+
+  let index = 0;
+  let timer = null;
+
+  function updateUI() {
+    slides.forEach((s, i) => {
+      s.style.display = (i === index) ? "block" : "none";
+    });
+    dots.forEach((d, i) => d.classList.toggle("active", i === index));
   }
 
-  // Expose function to jump to a specific slide
+  function goTo(n) {
+    index = ((n % slides.length) + slides.length) % slides.length;
+    updateUI();
+    resetTimer();
+  }
+
+  function next() {
+    goTo(index + 1);
+  }
+
+  function resetTimer() {
+    clearTimeout(timer);
+    timer = setTimeout(next, interval);
+  }
+
+  container.addEventListener("mouseenter", () => clearTimeout(timer));
+  container.addEventListener("mouseleave", () => resetTimer());
+
   window.currentSlide = function(id, n) {
-    if (id === containerId) showSlides(n);
+    if (id !== containerId) return;
+    goTo(n - 1);
   }
 
-  showSlides();
+  updateUI();
+  resetTimer();
 }
 
 initSlideshow("dig-slideshow", 5000);
