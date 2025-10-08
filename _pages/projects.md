@@ -21,6 +21,26 @@ Welcome to my projects page! Here's some of the stuff I've been doing (<small>pi
     <img class="slide" src="/images/Slideshow images/Heto10.png" style="width:100%; height:auto; display:none;">
   </a>
 </div>
+
+<script>
+function initSlideshow(containerId, interval=5000) {
+  let slideIndex = 0;
+  const container = document.getElementById(containerId);
+  const slides = container.getElementsByClassName("slide");
+
+  function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, interval);
+  }
+
+  showSlides();
+}
+</script>
 <script>
 initSlideshow("heto-slideshow", 5000);
 </script>
@@ -42,25 +62,6 @@ Contains custom art, a custom soundtrack, new plotline, region and fakemon!
   </a>
 </div>
 
-<script>
-function initSlideshow(containerId, interval=5000) {
-  let slideIndex = 0;
-  const container = document.getElementById(containerId);
-  const slides = container.getElementsByClassName("slide");
-
-  function showSlides() {
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, interval);
-  }
-
-  showSlides();
-}
-</script>
 <script>
 initSlideshow("hobo-slideshow", 5000);
 </script>
