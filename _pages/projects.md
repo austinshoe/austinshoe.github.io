@@ -4,7 +4,7 @@ permalink: /projects/
 author_profile: true
 ---
 
-Welcome to my projects page! Here's some of the stuff I've been doing.
+Welcome to my projects page! Here's some of the stuff I've been doing (<small>pictures are slideshows that auto-rotate every 5 seconds)</small>.
 
 ## Pokémon Heto
 [![Pokemon Heto Screenshot](/images/Pokémon_Heto_Demo.png)](https://github.com/austinshoe/PokemonHeto)
