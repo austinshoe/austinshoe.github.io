@@ -4,7 +4,9 @@ permalink: /random-facts/
 author_profile: true
 ---
 
-Some Random Facts About Me!
+
+
+...About Me! (What/Who else would it be about?)
 =====
 My favorite fruits are:
 1. Blackberries
