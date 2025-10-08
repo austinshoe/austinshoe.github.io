@@ -7,11 +7,28 @@ author_profile: true
 Welcome to my projects page! Here's some of the stuff I've been doing (<small>pictures are slideshows that auto-rotate every 5 seconds)</small>.
 
 ## Pokémon Heto
-[![Pokemon Heto Screenshot](/images/Pokémon_Heto_Demo.png)](https://github.com/austinshoe/PokemonHeto)
+<div id="Heto-slideshow" style="max-width:800px; margin:auto;">
+  <a href="https://github.com/austinshoe/PokemonHeto" target="_blank">
+    <img class="slide" src="/images/Pokémon_Heto_Demo.png" style="width:100%; height:auto;">
+    <img class="slide" src="/images/Slideshow images/Heto2.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Heto3.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Heto4.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Heto5.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Heto6.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Heto7.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Heto8.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Heto9.png" style="width:100%; height:auto; display:none;">
+    <img class="slide" src="/images/Slideshow images/Heto10.png" style="width:100%; height:auto; display:none;">
+  </a>
+</div>
+<script>
+initSlideshow("heto-slideshow", 5000);
+</script>
+
 [🔗 GitHub Repo](https://github.com/austinshoe/PokemonHeto)
 
 A custom Gen III styled Pokémon Decompilation fan game! Drew inspiration from the world of *86: Eighty-Six*! Developed using a publicly available, open-source decompilation of Pokémon Emerald, reconstructed for educational and fan-use purposes.
-Contains custom art, a custom soundtrack, new plotline, region and fakemon! Completion rate: 93%
+Contains custom art, a custom soundtrack, new plotline, region and fakemon! 
 
 ---
 

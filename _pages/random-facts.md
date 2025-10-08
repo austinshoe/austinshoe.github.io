@@ -6,7 +6,7 @@ author_profile: true
 
 
 
-...About Me! (What/Who else would it be about?)
+...About Me! <small>(What/Who else would it be about?)</small>
 =====
 My favorite fruits are:
 1. Blackberries
