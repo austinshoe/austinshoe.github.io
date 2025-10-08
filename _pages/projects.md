@@ -42,7 +42,7 @@ function initSlideshow(containerId, interval=5000) {
 }
 </script>
 <script>
-initSlideshow("heto-slideshow", 5000);
+initSlideshow("Heto-slideshow", 5000);
 </script>
 
 [🔗 GitHub Repo](https://github.com/austinshoe/PokemonHeto)
